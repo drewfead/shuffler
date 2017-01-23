@@ -19,6 +19,11 @@ HttpClient programmatically, but the available endpoints are as follows:
 * `/deck/list` -- POST (json like `{"pageSize":10, "offset":1}`. `pageSize` is optional        
 * `/deck/delete`  -- DELETE (params: name)
 
+I would have liked to string together some monitoring and harden the
+integration tests a bit, as well as get the logging sorted out (I've got
+some logback configuration commented out in App.java), but I ran short
+on time.
+
 Here are the approximate requirements for the project (note that I made
 some adjustments regarding list, to avoid the unbounded data problem):
 * Create a microservice that stores and shuffles card decks.
